@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | BasaiNepal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Define Brand Colors for Consistency */
+        :root {
+            --primary-color: #2c3e50; /* Deep Slate Blue */
+            --accent-color: #e67e22; /* Vibrant Orange (for links/focus) */
+            --white: #ffffff;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            /* Background setup: Using your main image for consistency */
+            background-image: url('modern-luxury-hotel-lobby-interior_605022-124097.avif'); 
+            background-size: cover;
+            background-position: center;
+            /* Darken the background slightly for better text visibility */
+           background-color: #111;
+            background-blend-mode: soft-light; 
+            
+            min-height: 100vh;
+            /* Center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: var(--white);
+        }
+
+        /* --- SIGN UP PANEL CONTAINER --- */
+        .signup-container {
+            width: 400px; /* Slightly wider for more fields */
+            /* Frosted Glass Effect - Light background for visibility */
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Heading and Subtext */
+        .signup-container h2 {
+            font-family: 'Playfair Display', serif; /* Matching main site heading font */
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+            text-align: left;
+        }
+        
+        .signup-container p.subtext {
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: left;
+        }
+
+        /* Form Elements */
+        form {
+            text-align: left;
+        }
+        
+        /* Input Field Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.15); 
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px rgba(230, 126, 34, 0.5); /* Orange shadow */
+            outline: none;
+        }
+        
+        /* Sign Up Button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color); /* Deep Blue button */
+            border: none;
+            color: var(--white); 
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--accent-color); /* Orange on hover */
+        }
+
+        /* Login Link */
+        .login-text {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .login-text a {
+            color: var(--accent-color); 
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-container">
+
+        <h2>Sign Up</h2>
+        <p class="subtext">Create your BasaiNepal account today.</p>
+        
+        <form action="#" method="post">
+            
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+
+            <input type="submit" value="Sign Up">
+
+            <p class="login-text">
+                Already have an account? 
+                <a href="Login.html">Log In</a>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>

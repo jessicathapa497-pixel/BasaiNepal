@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasaiNepal | Experience Comfort</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="BasaiNepal.jpg" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="BasaiNepal.jpg" alt="BasaiNepal Logo"> 
+                <h1>BasaiNepal</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+
+            </ul>
+
+            <div class="buttons">
+                <a href="Login.html" class="login-btn-link"><button class="login-btn">Log In</button></a>
+                <a href="signup.html" class="signin-btn-link"><button class="signin-btn">Sign In</button></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="/images/atr.royalmansion-bedroom2-mr.webp" alt="Luxury Room"> 
+
+        <div class="hero-text">
+            <h1>Let Your Journey Be Beautiful With Our Premium Services.</h1>
+            <p>Experience Comfort, Discover Nepal</p>
+        </div>
+
+        <div class="search-box">
+            <div class="search-item">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Where are you going?">
+            </div>
+            <div class="search-item">
+                <label for="checkin">Check In</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="search-item">
+                <label for="checkout">Check Out</label>
+                <input type="date" id="checkout">
+            </div> 
+            <div class="search-item">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" placeholder="2 Guests" min="1">
+            </div>
+
+            <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+    <h2 class="section-title">Popular Stays in Nepal</h2>
+
+    <section id="hotelList" class="hotel-container">
+
+        <div class="hotel-card" data-location="Kathmandu">
+             <div class="hotel-rating-badge">⭐ 4.9</div>
+            <img src="Hotel Himalaya.jpg" alt="Hotel Himalaya">
+            <div class="hotel-info">
+                <h2>Hotel Himalaya</h2>
+                <p class="location">📍 Kathmandu — 1.2 km from Center</p>
+               
+                <p class="desc">Luxury rooms with mountain views, rooftop pool, spa, and free airport pickup.</p>
+                <p class="price">NPR <b>6,000</b> / night</p>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="hotel-card" data-location="Pokhara">
+             <div class="hotel-rating-badge">⭐ 4.9</div>
+            <img src="hotel-shanker.jpg" alt="Hotel Shanker">
+            <div class="hotel-info">
+                <h2>Hotel Shanker</h2>
+                <p class="location">📍 Pokhara — Lakeside</p>
+                
+                <p class="desc">Lakeside rooms, breakfast included, relaxing garden, perfect for families.</p>
+                <p class="price">NPR <b>7,500</b> / night</p>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="hotel-card" data-location="Kathmandu">
+             <div class="hotel-rating-badge">⭐ 5</div>
+            <img src="hotel1hyatt.jpg" alt="Hyatt Regency">
+            <div class="hotel-info">
+                <h2>Hyatt Regency</h2>
+                <p class="location">📍 Kathmandu</p>
+               
+                <p class="desc">Premium rooms, city view, spa, pool, gym, and world-class dining.</p>
+                <p class="price">NPR <b>10,200</b> / night</p>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="hotel-card" data-location="Kathmandu">
+             <div class="hotel-rating-badge">⭐ 4.9</div>
+            <img src="hotel2.jpg" alt="Lord Buddha">
+            <div class="hotel-info">
+                <h2>Lord Buddha</h2>
+                <p class="location">📍 Kathmandu</p>
+                
+                <p class="desc">Affordable rooms with high quality service and adventure activities.</p>
+                <p class="price">NPR <b>8,200</b> / night</p>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="hotel-card" data-location="Pokhara">
+             <div class="hotel-rating-badge">⭐ 4.9</div>
+            <img src="hotel2.webp" alt="PeakPoint Hotel">
+            <div class="hotel-info">
+                <h2>PeakPoint Hotel</h2>
+                <p class="location">📍 Pokhara</p>
+                
+                <p class="desc">Budget-friendly accommodation with scenic mountain views and excellent hospitality.</p>
+                <p class="price">NPR <b>9,600</b> / night</p>
+                <button class="book-btn">View Details</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h4>Follow Us</h4>
+            <div class="social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 BasaiNepal | All Rights Reserved
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

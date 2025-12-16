@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | BasaiNepal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Define Brand Colors for Consistency */
+        :root {
+            --primary-color: #2c3e50; /* Deep Slate Blue */
+            --accent-color: #e67e22; /* Vibrant Orange (for Log In button/links) */
+            --white: #ffffff;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            /* Background setup: Using your main image for consistency */
+            background-image: url('Luxury-hotel-interior-design-on-the-water-1.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            /* Darken the background slightly for better text visibility */
+            background-color: #111; 
+            background-blend-mode: soft-light; 
+            
+            min-height: 100vh;
+            /* Center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: var(--white);
+        }
+
+        /* --- LOGIN PANEL CONTAINER --- */
+        .login-container {
+            width: 380px; /* Slightly wider */
+            /* Frosted Glass Effect - Light background for visibility */
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Heading and Subtext */
+        .login-container h2 {
+            font-family: 'Playfair Display', serif; /* Matching main site heading font */
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+            text-align: left;
+        }
+        
+        .login-container p.subtext {
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: left;
+        }
+
+        /* Form Elements */
+        form {
+            text-align: left;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.15); 
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px rgba(230, 126, 34, 0.5); /* Orange shadow */
+            outline: none;
+        }
+        
+        /* Forgot Password Link */
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            color: var(--accent-color); /* Orange accent color */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Log In Button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color); /* Deep Blue button */
+            border: none;
+            color: var(--white); 
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--accent-color); /* Orange on hover */
+        }
+
+        /* --- Social Login Section --- */
+        .divider {
+            margin: 25px 0 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            position: relative;
+        }
+        
+        .divider::before, .divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .divider::before { left: 0; }
+        .divider::after { right: 0; }
+
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        /* Sign Up Link */
+        .signup-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .signup-text a {
+            color: var(--accent-color); 
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .signup-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Log In</h2>
+        <p class="subtext">Welcome back! Please enter your details below.</p>
+        
+        <form action="#" method="post">
+
+            <input type="text" id="username" name="username" placeholder="Username or Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <input type="submit" value="Log In">
+
+            <p class="divider">OR</p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Sign in with Google"><i class="fab fa-google"></i></a>
+                <a href="#" aria-label="Sign in with Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Sign in with X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+
+            <p class="signup-text">
+                Don't have an account? 
+                <a href="Signup.html">Sign up</a>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Dream Stay - Basai Nepal</title>
+    <link rel="stylesheet" href="Booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-house-chimney"></i> Basai Nepal
+        </div>
+        <div class="nav-links">
+            <a href="#">Stays</a>
+            <a href="#">Experiences</a>
+            <a href="#">Wishlists</a>
+            <a href="#" class="host-link">Become a Host</a>
+            <button class="menu-button"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-circle-user"></i></button>
+        </div>
+    </nav>
+
+    <section class="filter-bar">
+        <form class="search-bar-mini">
+            <div class="input-group location-mini">
+                <label for="location-mini">Where</label>
+                <input type="text" id="location-mini" placeholder="Search destinations">
+            </div>
+            <div class="input-group dates-mini">
+                <label for="dates-mini">When</label>
+                <input type="text" id="dates-mini" placeholder="Add dates">
+            </div>
+            <div class="input-group guests-mini">
+                <label for="guests-mini">Who</label>
+                <input type="text" id="guests-mini" placeholder="Add guests">
+            </div>
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </section>
+    
+    <main class="content-wrapper">
+
+        <section class="category-filter-row">
+            <div class="category-list">
+                <a href="#" class="category-item active" data-category="all">
+                    <i class="fas fa-globe"></i>
+                    <span>All Stays</span>
+                </a>
+                <a href="#" class="category-item" data-category="lakefront">
+                    <i class="fas fa-water"></i>
+                    <span>Lakefront</span>
+                </a>
+                <a href="#" class="category-item" data-category="mountain">
+                    <i class="fas fa-mountain"></i>
+                    <span>Mountain Views</span>
+                </a>
+                <a href="#" class="category-item" data-category="villas">
+                    <i class="fas fa-home"></i>
+                    <span>Villas</span>
+                </a>
+                <a href="#" class="category-item" data-category="pool">
+                    <i class="fas fa-swimming-pool"></i>
+                    <span>Swimming Pools</span>
+                </a>
+                <a href="#" class="category-item" data-category="luxury">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxury</span>
+                </a>
+                <a href="#" class="category-item" data-category="heritage">
+                    <i class="fas fa-landmark"></i>
+                    <span>Heritage</span>
+                </a>
+            </div>
+            <button class="filters-button" id="open-filters-modal">
+                <i class="fas fa-filter"></i> Filters
+            </button>
+        </section>
+
+        <section class="listing-section" id="popular-stays">
+            <h2 class="section-header"><i class="fas fa-fire"></i> Popular Homes in Kathmandu <button class="nav-arrow"><i class="fas fa-chevron-right"></i></button></h2>
+            <div class="listing-grid">
+                
+                <a href="#" class="listing-card" data-category="luxury">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="atr.royalmansion-bedroom2-mr.webp" alt="Deluxe Apartment" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Deluxe Apartment in Thamel</p>
+                        <p class="listing-subtitle">Room in Thamel · 2 Guests</p>
+                        <p class="listing-price">**₹4,800** / night</p>
+                        <p class="listing-rating">4.8</p>
+                    </div>
+                </a>
+
+                <a href="#" class="listing-card" data-category="mountain">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="image3.jpg" alt="Guest House" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Guest House near Boudha</p>
+                        <p class="listing-subtitle">Guesthouse in Baudha · Room for 4</p>
+                        <p class="listing-price">**₹2,600** / night</p>
+                        <p class="listing-rating">4.9</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="listing-card" data-category="luxury mountain">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="hotel2.webp" alt="Luxury Room" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Luxury Room in Pokhara</p>
+                        <p class="listing-subtitle">Room in Pokhara · King Suite</p>
+                        <p class="listing-price">**₹5,000** / night</p>
+                        <p class="listing-rating">5.0</p>
+                    </div>
+                </a>
+
+                <a href="#" class="listing-card" data-category="heritage pool">
+                    <div class="listing-image-container">
+                        <img src="img4.webp" alt="Heritage Patio" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Newari Patio Home</p>
+                        <p class="listing-subtitle">Place in Patan · Entire home</p>
+                        <p class="listing-price">**₹3,500** / night</p>
+                        <p class="listing-rating">4.5</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="listing-section" id="pokhara-retreats">
+            <h2 class="section-header"><i class="fas fa-suitcase"></i> Available next month in Pokhara <button class="nav-arrow"><i class="fas fa-chevron-right"></i></button></h2>
+            <div class="listing-grid">
+                
+                <a href="#" class="listing-card" data-category="villas mountain">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="hotel-shanker.jpg" alt="Hut on Hill" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Private Hut on a Hill</p>
+                        <p class="listing-subtitle">Hotel in Lakeside · 2 Guests</p>
+                        <p class="listing-price">**₹2,500** / night</p>
+                        <p class="listing-rating">4.7</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="listing-card" data-category="lakefront">
+                    <div class="listing-image-container">
+                        <img src="Hotel Himalaya.jpg" alt="Lakeview Apartment" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Apartment by the Lake</p>
+                        <p class="listing-subtitle">Apartment in Pokhara · 3 Guests</p>
+                        <p class="listing-price">**₹3,200** / night</p>
+                        <p class="listing-rating">4.9</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="listing-card" data-category="luxury mountain">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="hotel-1731307_1280.jpg" alt="Mountain View Suite" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Modern Bedroom Suite</p>
+                        <p class="listing-subtitle">Pokhara, Nepal · Panoramic views</p>
+                        <p class="listing-price">**₹12,000** / night</p>
+                        <p class="listing-rating">5.0</p>
+                    </div>
+                </a>
+
+                <a href="#" class="listing-card" data-category="villas pool">
+                    <div class="listing-image-container">
+                        <span class="badge guest-favorite">Guest favorite</span>
+                        <img src="h2.jpg" alt="Private Cottage" class="listing-image">
+                        <button class="wishlist-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-details">
+                        <p class="listing-title">Cozy Private Cottage</p>
+                        <p class="listing-subtitle">Cottage in Kirtipur · 2 Guests</p>
+                        <p class="listing-price">**₹1,800** / night</p>
+                        <p class="listing-rating">4.7</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="filters-modal" class="modal">
+        </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Basai Nepal Bookings. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+
+    <script src="Booking.js"></script>
+
+</body>
+</html>
